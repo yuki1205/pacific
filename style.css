@@ -61,25 +61,24 @@
   padding-top: 28px;
 }
 
-#utility-nav {
-  float: left;
-  /************scss入れ子************/
+.utility-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#utility-nav li {
-  float: left;
+.utility-nav__item {
   padding-right: 10px;
 }
 
-#utility-nav li a {
+.utility-nav__item a {
   font-size: 85%;
   line-height: 1;
   background: url("./images/ico_link.png") no-repeat;
   padding-left: 15px;
-  /************scss疑似クラス************/
 }
 
-#utility-nav li a:hover {
+.utility-nav__item a:hover {
   color: #f00;
 }
 

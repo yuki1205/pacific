@@ -69,12 +69,12 @@ $link-hover-color: #f00;
   padding-top: 28px;
 }
 
-#utility-nav {
-  float: left;
+.utility-nav {
+  &__items {
+    display: flex;
+  }
 
-  /************scss入れ子************/
-  li {
-    float        : left;
+  &__item {
     padding-right: 10px;
 
     a {
@@ -83,7 +83,6 @@ $link-hover-color: #f00;
       background  : url("./images/ico_link.png") no-repeat;
       padding-left: 15px;
 
-      /************scss疑似クラス************/
       &:hover {
         color:$link-hover-color;
       }
