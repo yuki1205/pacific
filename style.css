@@ -2,28 +2,28 @@
 /*scss 変数*/
 /*scss mixin inlude*/
 /***********コンテナ***********/
-#container {
+.container {
   width: 958px;
   margin: auto;
 }
 
-.home #wrap {
+.home .wrap {
   background-image: url("./images/bg_wrap-front_page.png");
 }
 
-#wrap {
+.wrap {
   background-image: url("./images/bg_wrap.png");
   background-color: #f9f5ec;
   background-repeat: repeat-x;
 }
 
 /***********ページタイトル***********/
-#description {
+.description {
   background-color: #1a1a1a;
   /************scss入れ子************/
 }
 
-#description h1 {
+.description__title {
   color: #fff;
   font-size: 75%;
   font-weight: normal;
@@ -34,44 +34,44 @@
 }
 
 /***********ヘッダー***********/
-#header {
+.header {
   width: 950px;
   height: 85px;
   margin: auto;
   overflow: hidden;
+  /************scss入れ子************/
 }
 
-#site-id {
+.header__site {
   float: left;
   max-width: 450px;
   height: 61px;
   padding-top: 24px;
-  /************scss入れ子************/
 }
 
-#site-id a {
+.header__site--link {
   color: #1a1a1a;
   font-size: x-large;
 }
 
 /***********ヘッダーナビ***********/
-#utility-group {
+.utility-group {
   float: right;
   max-width: 500px;
   padding-top: 28px;
 }
 
-#utility-nav {
+.utility-group__nav {
   float: left;
   /************scss入れ子************/
 }
 
-#utility-nav li {
+.utility-group__nav li {
   float: left;
   padding-right: 10px;
 }
 
-#utility-nav li a {
+.utility-group__nav li a {
   font-size: 85%;
   line-height: 1;
   background: url("./images/ico_link.png") no-repeat;
@@ -79,7 +79,7 @@
   /************scss疑似クラス************/
 }
 
-#utility-nav li a:hover {
+.utility-group__nav li a:hover {
   color: #f00;
 }
 

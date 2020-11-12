@@ -10,27 +10,27 @@ $link-hover-color: #f00;
 }
 
 /***********コンテナ***********/
-#container {
+.container {
   width : 958px;
   margin: auto;
 }
 
-.home #wrap {
+.home .wrap {
   background-image: url("./images/bg_wrap-front_page.png");
 }
 
-#wrap {
+.wrap {
   background-image : url("./images/bg_wrap.png");
   background-color : #f9f5ec;
   background-repeat: repeat-x;
 }
 
 /***********ページタイトル***********/
-#description {
+.description {
   background-color: #1a1a1a;
 
   /************scss入れ子************/
-  h1 {
+  &__title {
     color      : #fff;
     font-size  : 75%;
     font-weight: normal;
@@ -42,54 +42,56 @@ $link-hover-color: #f00;
 }
 
 /***********ヘッダー***********/
-#header {
+.header {
   width   : 950px;
   height  : 85px;
   margin  : auto;
   overflow: hidden;
-}
-
-#site-id {
-  float      : left;
-  max-width  : 450px;
-  height     : 61px;
-  padding-top: 24px;
-
   /************scss入れ子************/
-  a {
-    color    : #1a1a1a;
-    font-size: x-large;
+  &__site {
+    float      : left;
+    max-width  : 450px;
+    height     : 61px;
+    padding-top: 24px;
+  
+    &--link {
+      color    : #1a1a1a;
+      font-size: x-large;
+    }
   }
 }
 
+
+
 /***********ヘッダーナビ***********/
-#utility-group {
+.utility-group {
   float      : right;
   max-width  : 500px;
   padding-top: 28px;
-}
-
-#utility-nav {
-  float: left;
-
-  /************scss入れ子************/
-  li {
-    float        : left;
-    padding-right: 10px;
-
-    a {
-      font-size   : 85%;
-      line-height : 1;
-      background  : url("./images/ico_link.png") no-repeat;
-      padding-left: 15px;
-
-      /************scss疑似クラス************/
-      &:hover {
-        color:$link-hover-color;
+  &__nav {
+    float: left;
+  
+    /************scss入れ子************/
+    li {
+      float        : left;
+      padding-right: 10px;
+  
+      a {
+        font-size   : 85%;
+        line-height : 1;
+        background  : url("./images/ico_link.png") no-repeat;
+        padding-left: 15px;
+  
+        /************scss疑似クラス************/
+        &:hover {
+          color:$link-hover-color;
+        }
       }
     }
   }
 }
+
+
 
 /***********グローバルナビ***********/
 #global-nav {
